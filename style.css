@@ -59,7 +59,7 @@
     display: grid;
     grid-gap: 80px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    height: 60%;
+    height: 100%;
 }
 .box {
     border-radius: 10px;
@@ -86,3 +86,87 @@
     margin-top: 0;
     font-size: 30px;
 }
+.space {
+    padding-bottom: 8%;
+}
+.space hr {
+    background-color: white;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 5px;
+}
+.last {
+    display: flex;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+    padding-top: 1%;
+    justify-content: center;
+}
+.last ul {
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+.last ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+.last ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+.last ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background:  linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: .5s;
+}
+.last ul li:hover::before{
+    opacity: 1;
+    transition: .5s;
+}
+.last ul li ion-icon{
+   font-size: 40px;
+   transition: .5s;
+   opacity: 1;
+}
+.last ul li:hover ion-icon{
+    opacity: 0;
+    color: white;
+    transition: .5s;
+ }
+ .last ul li span{
+    position: absolute;
+ }
+ .last ul li .title{
+    font-size: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .5s;
+ }
+ .last ul li a{
+    text-decoration: none;
+    color: white;
+ }
+ .last ul li:hover .title{
+    opacity: 1;
+    transition: .5s;
+ }
+
