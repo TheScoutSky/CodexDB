@@ -61,7 +61,7 @@
     display: grid;
     grid-gap: 200px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    height: 60%;
+    height: 100%;
 }
 .box1 {
     border-radius: 10px;
@@ -124,6 +124,7 @@ h1{
     margin-left: 20%;
     background-color: rgba(255, 255, 255, 0.10);
     text-decoration: none; 
+    padding-bottom: 3%;
 }
 .explain p {
     text-align: left;
@@ -141,7 +142,7 @@ h1{
     color: white;
 }
 .space {
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 .space hr {
     background-color: white;
@@ -212,14 +213,15 @@ h1{
  .last ul li .title{
     font-size: 25px;
     text-transform: uppercase;
-    opacity: 0;
+    transform: scale(0);
     transition: .5s;
  }
  .last ul li a{
     text-decoration: none;
     color: white;
+    transition: .5s;
  }
  .last ul li:hover .title{
-    opacity: 1;
-    transition: .5s;
+    transform: scale(1);
+    transition: .2s;
  }
